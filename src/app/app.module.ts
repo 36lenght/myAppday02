@@ -12,6 +12,7 @@ import { Myc08Component } from './myc08/myc08.component';
 import { PowPipe } from './pow.pipe';
 import { AbsPipe } from './abs.pipe';
 import { GenderPipe } from './gender.pipe';
+import { Myc09Component } from './myc09/myc09.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { GenderPipe } from './gender.pipe';
     PowPipe,
     AbsPipe,
     GenderPipe,
+    Myc09Component,
   ],
   imports: [BrowserModule],
   providers: [],
