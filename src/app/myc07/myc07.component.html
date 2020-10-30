@@ -1,0 +1,31 @@
+<p>myc07 works!</p>
+<ul>
+  <li>大写：{{ 'nice to meet you' | uppercase }}</li>
+  <li>小写：{{ 'NICE TO MEET YOU' | lowercase}}</li>
+  <li>首字母大写：{{'nice to meet you' | titlecase}}</li>
+  <!-- {{ 值 | 管道:参数:参数...}} -->
+  <!-- percent:'n.m' 整数最少n位，不足补0；小数m位，不足补0 -->
+  <li>百分数：{{0.05555 | percent:"0.2"}}</li>
+  <li>百分数：{{0.05555 | percent:"2.2"}}</li>
+  <li>百分数：{{0.055 | percent:"2.2"}}</li>
+  <li>千进位的钱：{{123456.789 | currency}}</li>
+  <li>千进位的钱：{{123456.789 | currency:"￥"}}</li>
+  <!-- 时间戳：当前时间 距离 1970年1月1日凌晨的秒数；此处要求单位是 ms 毫秒 -->
+  <li>日期：{{ 1604043966000 | date }}</li>
+  <!-- 
+    year    年 y
+    month   月 M
+    day     日 d
+    hour    时 h:12  H:24
+    minute  分 m
+    second  秒 s
+   -->
+   <li>日期:{{1604043966000 | date:"y-M-d h:m:s"}}</li>
+  <li>日期:{{1604043966000 | date:"y-MM-dd hh:mm:ss"}}</li>
+  <li>日期:{{1604043966000 | date:"y-MM-dd HH:mm:ss"}}</li>
+  <!-- slice截断字符串 -->
+  <!-- slice: n:m 代表截取 n<= 序号 <m -->
+  <li>abcdefghijklmnopqrstuvwxyz</li>
+  <li>{{"abcdefghijklmnopqrstuvwxyz" | slice:3}}</li>
+  <li>{{"abcdefghijklmnopqrstuvwxyz" | slice:3:10}}</li>
+</ul>

@@ -1,0 +1,21 @@
+<p>myc06 works!</p>
+<ul>
+  <li>亮亮</li>
+  <li>华哥</li>
+  <!-- 自制一个属性 -->
+  <li appHidden>然然</li>
+  <li appGreen>然然</li>
+  <li>东东</li>
+  <li>小新</li>
+</ul>
+
+<div>
+  <input type="text">
+  <br>
+  <!-- 期望： 制作一个 appFocus 指令，让输入框自动获取焦点状态 -->
+  <!-- 原生DOM：focus() 方法可以实现此功能 -->
+  <!-- 具体打印中，要查很深的原型链 -->
+  <input appFocus type="text">
+  <br>
+  <input type="text">
+</div>
